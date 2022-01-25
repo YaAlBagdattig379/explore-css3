@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document of circle</title>
+    <style>
+         .field{
+            width: 700px;
+            height: 300px;
+            background-color: rgb(126, 133, 129);
+            border: 1px solid greenyellow;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform: top right;
+        }
+        .bat{
+            margin-left: 100px;
+            width: 20%;
+            position: relative;
+            left: 20px;
+            transition: transform 0.25s ease-in;
+        }
+        .bat:hover{
+            transform: rotate(-60deg);
+            transform: top right;
+        }
+        .ball{
+            background-color: tomato;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            top: 270px;
+            left: 285px; 
+            transition: transform 1s ease-out -035;  
+        }
+        .ball:hover{
+            transform: translate(580px);
+        }
+        .field:hover .ball{
+            transform: translate(375px);   
+            translate: 750px, -100px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <div class="ball"></div>
+        <img class="bat" src="bat2022.png" alt="">
+    </div>
+</body>
+</html>
